@@ -1,0 +1,6 @@
+[
+  {"name" : "learn angular.js", "priority": "High"},
+  {"name" : "learn react", "priority": "Low"},
+  {"name" : "Todo", "priority": "Low"},
+  {"name" : "And again something Todo", "priority": "Medium"}
+]

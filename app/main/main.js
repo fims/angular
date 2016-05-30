@@ -8,7 +8,7 @@
  * Controller of the angularApp
  */
 angular.module('angularApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', ['todosService', function (todosService) {
     //Please avoid using $scope...
 
     //trick to access scope in inner function
@@ -21,9 +21,20 @@ angular.module('angularApp')
       'Low'
     ];
 
-    this.add = function(todo){
-      console.log("add todo " + todo.name + " "  + todo.priority);
+    this.add = function (todo) {
+      console.log("add todo " + todo.name + " " + todo.priority);
       var tmp = angular.copy(todo);
       self.todos.push(tmp);
-    }
-  });
+    };
+
+    var getTodos = function () {
+      todosService.getTodos()
+        .then(function (todos) {
+          console.log(todos);
+          self.todos = todos;
+        });
+    };
+
+    getTodos();
+
+  }]);
