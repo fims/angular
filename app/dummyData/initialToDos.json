@@ -1,6 +1,6 @@
 [
-  {"name" : "learn angular.js", "priority": "High"},
-  {"name" : "learn react", "priority": "Low"},
-  {"name" : "Todo", "priority": "Low"},
-  {"name" : "And again something Todo", "priority": "Medium"}
+  {"name" : "learn angular.js", "priority": "High", "done": false},
+  {"name" : "learn react", "priority": "Low", "done": true},
+  {"name" : "Todo", "priority": "Low", "done": false},
+  {"name" : "And again something Todo", "priority": "Medium", "done": false}
 ]

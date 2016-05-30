@@ -12,4 +12,6 @@
 
 <p>Binding to the conroller</p>
 
-<p ng-repeat="todo in main.todos">{{todo.name}} {{todo.priority}}</p>
+<p ng-repeat="todo in main.todos" class="hand" ng-class="{done: todo.done}" ng-click="main.mark(todo)">
+  {{todo.name}} {{todo.priority}}
+</p>

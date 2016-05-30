@@ -27,6 +27,10 @@ angular.module('angularApp')
       self.todos.push(tmp);
     };
 
+    this.mark = function (todo) {
+      todo.done = !todo.done;
+    };
+
     var getTodos = function () {
       todosService.getTodos()
         .then(function (todos) {

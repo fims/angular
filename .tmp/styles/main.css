@@ -8803,5 +8803,14 @@ body {
     border-bottom: 0;
   }
 }
+/* line 93, ../../app/styles/main.scss */
+.done {
+  text-decoration: line-through;
+}
+
+/* line 97, ../../app/styles/main.scss */
+.hand {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=main.css.map */
