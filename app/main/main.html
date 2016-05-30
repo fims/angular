@@ -2,14 +2,14 @@
   Todo: <input type="text" ng-model="todo.name">
   <!--Priority: -->
   <select ng-model="todo.priority">
-    <option>High</option>
-    <option>Medium</option>
-    <option>Low</option>
+    <option ng-repeat="priority in main.priorities">{{priority}}</option>
   </select>
+
+  <button ng-click="main.add(todo)">Add to list</button>
 </form>
 
 <br>
 
-<p>Here we already have a direct binding!</p>
+<p>Binding to the conroller</p>
 
-<p>{{todo.name}} {{todo.priority}}</p>
+<p ng-repeat="todo in main.todos">{{todo.name}} {{todo.priority}}</p>

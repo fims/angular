@@ -9,9 +9,21 @@
  */
 angular.module('angularApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+    //Please avoid using $scope...
+
+    //trick to access scope in inner function
+    var self = this;
+    this.todos = [];
+
+    this.priorities = [
+      'High',
+      'Medium',
+      'Low'
     ];
+
+    this.add = function(todo){
+      console.log("add todo " + todo.name + " "  + todo.priority);
+      var tmp = angular.copy(todo);
+      self.todos.push(tmp);
+    }
   });
