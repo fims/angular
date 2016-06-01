@@ -24,11 +24,44 @@ angular.module('angularApp')
     this.add = function (todo) {
       console.log("add todo " + todo.name + " " + todo.priority);
       var tmp = angular.copy(todo);
+
+      todosService.addTodo(todo)
+        .then(function (id) {
+          //returns id of the new inserted todo
+          tmp.id = id;
+
+          //pushing the new entry to the list would be here
+        }, function (error) {
+          console.error(error);
+        });
       self.todos.push(tmp);
     };
 
     this.mark = function (todo) {
       todo.done = !todo.done;
+
+      todosService.changeTodo(todo)
+        .then(function () {
+          //mark as not read would be here
+        }, function (error) {
+          console.error(error);
+        });
+    };
+
+    this.delete = function (todo) {
+      $.each(self.todos, function (i) {
+        if (self.todos[i] === todo) {
+          self.todos.splice(i, 1);
+          return false;
+        }
+      });
+
+      todosService.deleteTodo(todo)
+        .then(function() {
+          //removing would be here
+        }, function (error) {
+          console.error(error);
+        });
     };
 
     var getTodos = function () {

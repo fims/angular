@@ -12,6 +12,14 @@
 
 <p>Binding to the conroller</p>
 
-<p ng-repeat="todo in main.todos" class="hand" ng-class="{done: todo.done}" ng-click="main.mark(todo)">
-  {{todo.name}} {{todo.priority}}
-</p>
+<div ng-repeat="todo in main.todos">
+  <div class="row hand">
+    <div class="col-sm-10" ng-class="{done: todo.done}" ng-click="main.mark(todo)">
+      {{todo.name}} {{todo.priority}}
+    </div>
+    <div class="col-sm-2 pull-right">
+      <a ng-click="main.delete(todo)"><i class="fa fa-trash"></i></a>
+    </div>
+  </div>
+</div>
+

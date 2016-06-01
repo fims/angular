@@ -1,6 +1,26 @@
 [
-  {"name" : "learn angular.js", "priority": "High", "done": false},
-  {"name" : "learn react", "priority": "Low", "done": true},
-  {"name" : "Todo", "priority": "Low", "done": false},
-  {"name" : "And again something Todo", "priority": "Medium", "done": false}
+  {
+    "id": 1,
+    "name": "learn angular.js",
+    "priority": "High",
+    "done": false
+  },
+  {
+    "id": 2,
+    "name": "learn react",
+    "priority": "Low",
+    "done": true
+  },
+  {
+    "id": 3,
+    "name": "Todo",
+    "priority": "Low",
+    "done": false
+  },
+  {
+    "id": 4,
+    "name": "And again something Todo",
+    "priority": "Medium",
+    "done": false
+  }
 ]
