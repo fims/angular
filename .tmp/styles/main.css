@@ -8711,8 +8711,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/bower_components/font-awesome/fonts//fontawesome-webfont.eot?v=4.6.3");
-  src: url("/bower_components/font-awesome/fonts//fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/bower_components/font-awesome/fonts//fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/bower_components/font-awesome/fonts//fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/bower_components/font-awesome/fonts//fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/bower_components/font-awesome/fonts//fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12210,7 +12210,7 @@ button.close {
   clip: auto;
 }
 
-/* line 10, ../../app/styles/main.scss */
+/* line 7, ../../app/styles/main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12218,13 +12218,13 @@ button.close {
   padding: 0.2em 0;
 }
 
-/* line 17, ../../app/styles/main.scss */
+/* line 14, ../../app/styles/main.scss */
 body {
   padding: 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 22, ../../app/styles/main.scss */
+/* line 19, ../../app/styles/main.scss */
 .header,
 .marketing,
 .footer {
@@ -12233,13 +12233,13 @@ body {
 }
 
 /* Custom page header */
-/* line 30, ../../app/styles/main.scss */
+/* line 27, ../../app/styles/main.scss */
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 35, ../../app/styles/main.scss */
+/* line 32, ../../app/styles/main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -12248,49 +12248,49 @@ body {
 }
 
 /* Custom page footer */
-/* line 44, ../../app/styles/main.scss */
+/* line 41, ../../app/styles/main.scss */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 50, ../../app/styles/main.scss */
+/* line 47, ../../app/styles/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 55, ../../app/styles/main.scss */
+/* line 52, ../../app/styles/main.scss */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 59, ../../app/styles/main.scss */
+/* line 56, ../../app/styles/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-/* line 66, ../../app/styles/main.scss */
+/* line 63, ../../app/styles/main.scss */
 .marketing {
   margin: 40px 0;
 }
-/* line 69, ../../app/styles/main.scss */
+/* line 66, ../../app/styles/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 76, ../../app/styles/main.scss */
+  /* line 73, ../../app/styles/main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 81, ../../app/styles/main.scss */
+  /* line 78, ../../app/styles/main.scss */
   .header,
   .marketing,
   .footer {
@@ -12299,25 +12299,49 @@ body {
   }
 
   /* Space out the masthead */
-  /* line 88, ../../app/styles/main.scss */
+  /* line 85, ../../app/styles/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 92, ../../app/styles/main.scss */
+  /* line 89, ../../app/styles/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
 }
-/* line 97, ../../app/styles/main.scss */
+/* line 94, ../../app/styles/main.scss */
 .done {
   text-decoration: line-through;
 }
 
-/* line 101, ../../app/styles/main.scss */
+/* line 98, ../../app/styles/main.scss */
 .hand {
   cursor: pointer;
+}
+
+/* line 102, ../../app/styles/main.scss */
+.blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+}
+
+/* line 110, ../../app/styles/main.scss */
+.blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+/* line 119, ../../app/styles/main.scss */
+blockquote p {
+  display: inline;
 }
 
 /*# sourceMappingURL=main.css.map */

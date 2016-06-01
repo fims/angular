@@ -24,6 +24,11 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/pilot', {
+        templateUrl: 'pilot/pilot.html',
+        controller: 'PilotCtrl',
+        controllerAs: 'pilot'
+      })
       .otherwise({
         redirectTo: '/'
       });
